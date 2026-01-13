@@ -16,10 +16,12 @@ export default function LibraryPage() {
     const taxonomy = JSON.parse(fs.readFileSync(taxonomyPath, 'utf8'));
 
     return (
-        <div className="container mx-auto px-4 py-12">
-            <div className="mb-8">
-                <h1 className="text-3xl font-bold text-ksa-green-900 mb-2">Knowledge Library</h1>
-                <p className="text-ksa-green-700">Explore our collection of guides, standards, and best practices.</p>
+        <div className="container mx-auto px-4 py-16">
+            <div className="mb-12 text-center">
+                <span className="text-ksa-nature-600 font-bold tracking-widest uppercase mb-2 block">The Vault</span>
+                <h1 className="text-[28px] font-black text-white mb-2 uppercase">Knowledge Library</h1>
+                <p className="text-ksa-green-700 text-lg font-light max-w-2xl mx-auto">Explore our extensive collection of guides, standards, and best practices for sustainable development in the Kingdom.</p>
+                <div className="w-24 h-1 bg-ksa-nature-500 mx-auto mt-8"></div>
             </div>
             <LibraryView posts={posts} taxonomy={taxonomy} />
         </div>
