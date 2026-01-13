@@ -1,0 +1,55 @@
+{
+    "frameworks": [
+        {
+            "slug": "mostadam",
+            "name": "Mostadam",
+            "description": "Saudi Arabia’s Green Building Rating System."
+        },
+        {
+            "slug": "leed",
+            "name": "LEED",
+            "description": "Leadership in Energy and Environmental Design."
+        },
+        {
+            "slug": "well",
+            "name": "WELL",
+            "description": "Focuses on building occupants’ health and well-being."
+        }
+    ],
+    "topics": [
+        {
+            "slug": "energy",
+            "name": "Energy Efficiency"
+        },
+        {
+            "slug": "water",
+            "name": "Water Conservation"
+        },
+        {
+            "slug": "materials",
+            "name": "Materials & Resources"
+        },
+        {
+            "slug": "iaq",
+            "name": "Indoor Environmental Quality"
+        },
+        {
+            "slug": "site",
+            "name": "Sustainable Sites"
+        }
+    ],
+    "stages": [
+        {
+            "slug": "design",
+            "name": "Design"
+        },
+        {
+            "slug": "construction",
+            "name": "Construction"
+        },
+        {
+            "slug": "operation",
+            "name": "Operations"
+        }
+    ]
+}

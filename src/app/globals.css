@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: var(--font-inter);
+
+  --color-ksa-green-900: #0B2B24;
+  --color-ksa-green-800: #113F36;
+  --color-ksa-green-700: #1A564B;
+
+  --color-ksa-sand-100: #FAF9F7;
+  --color-ksa-sand-200: #F0EFE9;
+  --color-ksa-sand-300: #E6E4DC;
+
+  --color-ksa-teal-500: #2C7A7B;
+  --color-ksa-teal-600: #236C6D;
+
+  --color-ksa-gold-400: #D4B977;
+  --color-ksa-gold-500: #C5A059;
+  --color-ksa-gold-600: #A8863D;
+}
+
+/* Utilities */
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+  max-width: 1280px;
+}
+
+body {
+  background-color: var(--color-ksa-sand-100);
+  color: var(--color-ksa-green-900);
+}
+
+/* Custom typography overrides for headings to look more corporate */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-ksa-green-900);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
