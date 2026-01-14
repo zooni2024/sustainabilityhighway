@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getAllPosts } from '@/lib/mdx';
 import GuideCard from '@/components/GuideCard';
+import MostadamSection from '@/components/MostadamSection';
 import { ArrowRight, Building2, Leaf, Globe, Award, TrendingUp, Users } from 'lucide-react';
 
 // Icon component for the target/goal icon
@@ -32,7 +33,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section - Cinematic Video Sustainability Style */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden text-white">
+      <section className="relative h-screen min-h-[100dvh] flex items-center justify-center overflow-hidden text-white">
         {/* YouTube Video Background */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <iframe
@@ -216,6 +217,63 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Standards & Trust Ticker */}
+      <section className="py-12 bg-white border-y border-ksa-nature-100">
+        <div className="container mx-auto px-4">
+          <p className="text-center text-sm font-bold text-gray-400 uppercase tracking-[0.2em] mb-8">Aligned With Global Standards</p>
+          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+            {/* Text Placeholders for Logos until images are provided - SEO friendly text */}
+            <div className="text-2xl font-black text-gray-300 hover:text-ksa-green-900 cursor-default">VISION 2030</div>
+            <div className="text-2xl font-black text-gray-300 hover:text-ksa-green-900 cursor-default">MOSTADAM</div>
+            <div className="text-2xl font-black text-gray-300 hover:text-ksa-green-900 cursor-default">LEED</div>
+            <div className="text-2xl font-black text-gray-300 hover:text-ksa-green-900 cursor-default">SGI</div>
+            <div className="text-2xl font-black text-gray-300 hover:text-ksa-green-900 cursor-default">USGBC</div>
+          </div>
+        </div>
+      </section>
+
+      {/* Target Audience / "Who is this for?" - SEO Content Block */}
+      <section className="py-24 bg-ksa-nature-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-black text-ksa-green-900 mb-4">Empowering The Construction Ecosystem</h2>
+            <p className="text-gray-600 text-lg">Whether you are designing, building, or managing, Sustainability Highway provides the specific tools you need.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-ksa-nature-500">
+              <h3 className="text-xl font-bold text-ksa-green-900 mb-3">Architects & Designers</h3>
+              <p className="text-gray-600 mb-4 text-sm">Integrate passive design strategies and specify sustainable materials from the start.</p>
+              <ul className="space-y-2">
+                <li className="text-xs font-bold text-ksa-nature-600 uppercase tracking-wider">• Design Guides</li>
+                <li className="text-xs font-bold text-ksa-nature-600 uppercase tracking-wider">• Material Specs</li>
+              </ul>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-ksa-gold-500">
+              <h3 className="text-xl font-bold text-ksa-green-900 mb-3">Contractors & Developers</h3>
+              <p className="text-gray-600 mb-4 text-sm">Ensure site compliance, waste management, and streamlined certification processes.</p>
+              <ul className="space-y-2">
+                <li className="text-xs font-bold text-ksa-gold-600 uppercase tracking-wider">• Construction Checklists</li>
+                <li className="text-xs font-bold text-ksa-gold-600 uppercase tracking-wider">• Compliance Docs</li>
+              </ul>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-blue-500">
+              <h3 className="text-xl font-bold text-ksa-green-900 mb-3">Facility Managers</h3>
+              <p className="text-gray-600 mb-4 text-sm">Optimize operational energy, water usage, and indoor environmental quality.</p>
+              <ul className="space-y-2">
+                <li className="text-xs font-bold text-blue-600 uppercase tracking-wider">• Performance Tracking</li>
+                <li className="text-xs font-bold text-blue-600 uppercase tracking-wider">• Maintenance Logs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Stats / Impact Section - Dark */}
       <section className="py-20 bg-ksa-green-950 text-white relative isolate overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-overlay"></div>
@@ -265,38 +323,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Call to Action - Parallax/Image */}
-      <section className="py-32 bg-ksa-green-900 text-center relative overflow-hidden flex flex-col items-center justify-center">
-        <div className="absolute inset-0 z-0">
-          {/* Abstract blurry shapes */}
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-ksa-nature-700 to-ksa-green-900 opacity-90"></div>
-          <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-ksa-gold-500/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-t from-black/40 to-transparent"></div>
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10 max-w-3xl">
-          <h2 className="text-4xl md:text-6xl font-black text-white mb-8 leading-tight">
-            Ready to <span className="text-ksa-gold-400">Transform</span> Your Next Project?
-          </h2>
-          <p className="text-xl text-gray-200 mb-10 leading-relaxed font-light">
-            Join the movement towards a sustainable, resilient, and prosperous Kingdom. Submit your questions or suggest topics for our experts.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="px-10 py-5 bg-ksa-gold-500 text-ksa-green-950 font-bold text-xl rounded hover:bg-white hover:scale-105 transition-all shadow-lg shadow-ksa-gold-500/30"
-            >
-              Suggest a Topic
-            </Link>
-            <Link
-              href="/about"
-              className="px-10 py-5 border border-white text-white font-bold text-xl rounded hover:bg-white/10 transition-all backdrop-blur-sm"
-            >
-              Our Mission
-            </Link>
-          </div>
-        </div>
-      </section>
+      <MostadamSection />
     </>
   );
 }

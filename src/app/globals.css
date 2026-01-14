@@ -43,13 +43,6 @@ body {
   color: var(--color-ksa-green-900);
 }
 
-/* Custom typography overrides for headings to look more corporate */
-h1 {
-  font-size: 28px;
-  line-height: normal;
-  color: #FFFFFF;
-}
-
 h1,
 h2,
 h3,
@@ -59,4 +52,9 @@ h6 {
   color: var(--color-ksa-green-900);
   font-weight: 700;
   letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
 }

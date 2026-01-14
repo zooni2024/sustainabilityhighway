@@ -24,10 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="antialiased font-sans bg-ksa-nature-50 text-ksa-green-900 flex flex-col min-h-screen">
+    <html lang="en" className={`${inter.variable} scroll-smooth`}>
+      <body className="antialiased font-sans bg-ksa-nature-50 text-ksa-green-900 flex flex-col min-h-screen selection:bg-ksa-gold-500 selection:text-white overflow-x-hidden">
         <Navigation />
-        <main className="flex-grow">
+        <main className="flex-grow relative flex flex-col">
           {children}
         </main>
         <Footer />
