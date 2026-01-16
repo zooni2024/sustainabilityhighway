@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Leaf, Twitter, Linkedin, Instagram, Youtube, Mail, MapPin, Phone } from 'lucide-react';
+import { Twitter, Linkedin, Instagram, Youtube, Mail } from 'lucide-react';
 
 export default function Footer() {
     return (
@@ -29,7 +29,7 @@ export default function Footer() {
 
                     {/* Column 2: Quick Links */}
                     <div>
-                        <h3 className="text-ksa-gold-500 font-bold text-lg mb-6 uppercase tracking-wide border-l-4 border-ksa-gold-500 pl-3">Quick Links</h3>
+                        <h3 className="text-ksa-gold-500 font-extrabold text-xl mb-6 uppercase tracking-wide border-l-4 border-ksa-gold-500 pl-3">Quick Links</h3>
                         <ul className="space-y-3">
                             {['About Us', 'Our Services', 'Projects', 'News & Events', 'Contact Us'].map((item) => (
                                 <li key={item}>
@@ -43,7 +43,7 @@ export default function Footer() {
 
                     {/* Column 3: Services */}
                     <div>
-                        <h3 className="text-ksa-gold-500 font-bold text-lg mb-6 uppercase tracking-wide border-l-4 border-ksa-gold-500 pl-3">Our Services</h3>
+                        <h3 className="text-ksa-gold-500 font-extrabold text-xl mb-6 uppercase tracking-wide border-l-4 border-ksa-gold-500 pl-3">Our Services</h3>
                         <ul className="space-y-3">
                             {['Mostadam Certification', 'LEED Consultancy', 'Energy Auditing', 'Environmental Strategy', 'Training'].map((item) => (
                                 <li key={item}>
@@ -57,20 +57,8 @@ export default function Footer() {
 
                     {/* Column 4: Contact Us */}
                     <div>
-                        <h3 className="text-ksa-gold-500 font-bold text-lg mb-6 uppercase tracking-wide border-l-4 border-ksa-gold-500 pl-3">Contact Us</h3>
+                        <h3 className="text-ksa-gold-500 font-extrabold text-xl mb-6 uppercase tracking-wide border-l-4 border-ksa-gold-500 pl-3">Contact Us</h3>
                         <div className="space-y-5">
-                            <div className="flex items-start space-x-4 group">
-                                <div className="p-2 bg-[#2A2A2A] rounded text-ksa-gold-500 group-hover:bg-ksa-gold-500 group-hover:text-[#1B1B1B] transition-colors">
-                                    <MapPin size={18} className="shrink-0" />
-                                </div>
-                                <span className="group-hover:text-white transition-colors">123 King Fahd Road,<br />Riyadh 11564, KSA</span>
-                            </div>
-                            <div className="flex items-center space-x-4 group">
-                                <div className="p-2 bg-[#2A2A2A] rounded text-ksa-gold-500 group-hover:bg-ksa-gold-500 group-hover:text-[#1B1B1B] transition-colors">
-                                    <Phone size={18} className="shrink-0" />
-                                </div>
-                                <span className="group-hover:text-white transition-colors">+966 11 234 5678</span>
-                            </div>
                             <div className="flex items-center space-x-4 group">
                                 <div className="p-2 bg-[#2A2A2A] rounded text-ksa-gold-500 group-hover:bg-ksa-gold-500 group-hover:text-[#1B1B1B] transition-colors">
                                     <Mail size={18} className="shrink-0" />

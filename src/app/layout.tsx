@@ -25,9 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} scroll-smooth`}>
-      <body className="antialiased font-sans bg-ksa-nature-50 text-ksa-green-900 flex flex-col min-h-screen selection:bg-ksa-gold-500 selection:text-white overflow-x-hidden">
+      <body className="antialiased font-sans bg-ksa-nature-50 text-ksa-green-900 flex flex-col min-h-screen selection:bg-ksa-gold-500 selection:text-white overflow-x-hidden relative">
+        {/* Global Noise Texture */}
+        <div className="bg-noise"></div>
+
         <Navigation />
-        <main className="flex-grow relative flex flex-col">
+        <main className="flex-grow relative flex flex-col z-10">
           {children}
         </main>
         <Footer />

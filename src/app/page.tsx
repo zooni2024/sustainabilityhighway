@@ -276,7 +276,7 @@ export default function Home() {
 
       {/* Stats / Impact Section - Dark */}
       <section className="py-20 bg-ksa-green-950 text-white relative isolate overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-overlay"></div>
+        <div className="absolute inset-0 z-0 opacity-10 bg-[radial-gradient(#ffffff33_1px,transparent_1px)] [background-size:20px_20px]"></div>
         <div className="absolute -left-20 top-1/2 w-64 h-64 bg-ksa-gold-500/20 rounded-full blur-[100px]"></div>
         <div className="absolute -right-20 bottom-0 w-64 h-64 bg-ksa-nature-500/20 rounded-full blur-[100px]"></div>
 
